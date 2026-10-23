@@ -133,7 +133,7 @@ function build(){
   num=0;clicks=0;busy=false;t0=0;document.body.classList.remove('paused');
   $('#root').innerHTML=`
   <section class="scene" id="s-env" tabindex="-1">
-    <p class="h">welcome..</p>
+    <p class="h">welcome...</p>
     <p class="sub">to this thing!</p>
     <div class="env" id="env"><div class="eb"></div><div class="lt" aria-hidden="true"><i></i><i></i><i></i></div><div class="ef"></div><div class="fp"></div><div class="sl">${HEART}</div></div>
     <p class="mail" id="mail" aria-live="polite"></p>
@@ -201,7 +201,7 @@ function build(){
     else{const r=tg.getBoundingClientRect();boom(r.left+r.width/2,r.top+r.height/2);sfx('boom');tg.hidden=true;T(load,1200)}};
   // Scene 6: letter + replay
   $('#more').onclick=e=>{e.currentTarget.hidden=true;$('#note').hidden=false;burst(8);sfx('heart');T(()=>$('#fin').focus(),300)};
-  $('#fin').onclick=e=>{e.currentTarget.hidden=true;$('#done').textContent='how have you been.. enna?';burst(28);sfx('heart');$('#again').hidden=false;$('#again').focus()};
+  $('#fin').onclick=e=>{e.currentTarget.hidden=true;$('#done').textContent='how have you been... Enna?';burst(28);sfx('heart');$('#again').hidden=false;$('#again').focus()};
   $('#again').onclick=build;
   go('s-env');
 }
