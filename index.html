@@ -201,7 +201,7 @@ function build(){
     else{const r=tg.getBoundingClientRect();boom(r.left+r.width/2,r.top+r.height/2);sfx('boom');tg.hidden=true;T(load,1200)}};
   // Scene 6: letter + replay
   $('#more').onclick=e=>{e.currentTarget.hidden=true;$('#note').hidden=false;burst(8);sfx('heart');T(()=>$('#fin').focus(),300)};
-  $('#fin').onclick=e=>{e.currentTarget.hidden=true;$('#done').textContent='how have you been... Enna?';burst(28);sfx('heart');$('#again').hidden=false;$('#again').focus()};
+  $('#fin').onclick=e=>{e.currentTarget.hidden=true;$('#done').textContent='that is all son';burst(28);sfx('heart');$('#again').hidden=false;$('#again').focus()};
   $('#again').onclick=build;
   go('s-env');
 }
